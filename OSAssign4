@@ -1,0 +1,71 @@
+cat > data.txt//
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+darshan@darshan-Inspiron-15-5518:~$ wc data.txt//
+  6  25 145 data.txt
+darshan@darshan-Inspiron-15-5518:~$ grep "files" data.txt//
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+darshan@darshan-Inspiron-15-5518:~$ grep "file" data.txt//
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+darshan@darshan-Inspiron-15-5518:~$ grep -n "files" data.txt//
+3:files have permissions.
+4:files have inode no.
+5:files have size.
+6:there are several types of files
+darshan@darshan-Inspiron-15-5518:~$ grep -c "files" data.txt//
+4
+darshan@darshan-Inspiron-15-5518:~$ grep -w "files" data.txt//
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+darshan@darshan-Inspiron-15-5518:~$ grep -v "files" data.txt//
+Linux is open source.
+In Linux everything is file
+darshan@darshan-Inspiron-15-5518:~$ grep  "have" data.txt//
+files have permissions.
+files have inode no.
+files have size.
+darshan@darshan-Inspiron-15-5518:~$ grep "^f" data.txt//
+files have permissions.
+files have inode no.
+files have size.
+darshan@darshan-Inspiron-15-5518:~$ grep ".$" data.txt//
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+darshan@darshan-Inspiron-15-5518:~$ head data.txt//
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+darshan@darshan-Inspiron-15-5518:~$ head -2 data.txt//
+Linux is open source.
+In Linux everything is file
+darshan@darshan-Inspiron-15-5518:~$ tail -3 data.txt//
+files have inode no.
+files have size.
+there are several types of files
+
+darshan@darshan-Inspiron-15-5518:~$ head -5 data.txt | tail -3  // 
+files have permissions.
+files have inode no.
+files have size.
+
